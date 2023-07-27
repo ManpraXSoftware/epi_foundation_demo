@@ -15,12 +15,6 @@ namespace Foundation.Features.AboutUs
     [ImageUrl("~/assets/icons/cms/pages/CMS-icon-page-02.png")]
     public class AboutUsPage : FoundationPageData
     {
-        [CultureSpecific]
-        [Display(Name = "Top content area", GroupName = SystemTabNames.Content, Order = 190)]
-        public virtual ContentArea TopContentArea { get; set; }
-
-        [CultureSpecific]
-        [Display(Name = "Bottom content area", GroupName = SystemTabNames.Content, Order = 210)]
-        public virtual ContentArea BottomContentArea { get; set; }
+        
     }
 }
