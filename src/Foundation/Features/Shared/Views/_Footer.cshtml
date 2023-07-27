@@ -51,14 +51,13 @@
                     </div>
                 }
             </div>
-
             <div class="col-md-6 col-lg-2">
-                <h3 class="footer__heading" @Html.EditAttributes(x => x.AboutUsHeader)>About Us</h3>
+                <h3 class="footer__heading" @Html.EditAttributes(x => x.AboutUsHeader)>@Html.DisplayFor(x => x.AboutUsHeader)</h3>
 
                 @if (Model != null)
                 {
-                    <div @Html.EditAttributes(x => x.SocialLinks)>
-                        @foreach (var item in Model.SocialLinks ?? new LinkItemCollection())
+                    <div @Html.EditAttributes(x => x.AboutUsLinks)>
+                        @foreach (var item in Model.AboutUsLinks ?? new LinkItemCollection())
                         {
                             <a class="footer__link" href="@Url.PageUrl(item.Href)" target="_blank">
                                 @item.Text
