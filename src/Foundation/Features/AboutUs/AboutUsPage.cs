@@ -15,6 +15,8 @@ namespace Foundation.Features.AboutUs
     [ImageUrl("~/assets/icons/cms/pages/CMS-icon-page-02.png")]
     public class AboutUsPage : FoundationPageData
     {
-        
+        [CultureSpecific]
+        [Display(Name = "Left content area", GroupName = SystemTabNames.Content, Order = 190)]
+        public virtual ContentArea LeftContentArea { get; set; }
     }
 }

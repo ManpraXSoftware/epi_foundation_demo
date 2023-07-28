@@ -61,12 +61,16 @@ namespace Foundation.Features.Settings
         public virtual string SocialHeader { get; set; }
 
         [CultureSpecific]
-        [Display(Name = "About Us", GroupName = TabNames.Footer, Order = 100)]
+        [Display(Name = "AboutUs Header", GroupName = TabNames.Footer, Order = 100)]
         public virtual string AboutUsHeader { get; set; }
 
         [CultureSpecific]
         [Display(Name = "Social links", GroupName = TabNames.Footer, Order = 85)]
         public virtual LinkItemCollection SocialLinks { get; set; }
+
+        [CultureSpecific]
+        [Display(Name = "AboutUs links", GroupName = TabNames.Footer, Order = 85)]
+        public virtual LinkItemCollection AboutUsLinks { get; set; }
 
         [CultureSpecific]
         [Display(Name = "Content area", GroupName = TabNames.Footer, Order = 90)]

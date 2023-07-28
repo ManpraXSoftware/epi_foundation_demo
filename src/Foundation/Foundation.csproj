@@ -1082,9 +1082,12 @@
     <Compile Include="Commerce\Models\EditorDescriptors\SortOrderSelectionFactory.cs" />
     <Compile Include="Commerce\Models\EditorDescriptors\VirtualVariantTypeSelectionFactory.cs" />
     <Compile Include="Commerce\NavigationAuthorizeAttribute.cs" />
+    <Compile Include="Features\AboutUs\AboutUsController.cs" />
+    <Compile Include="Features\AboutUs\AboutUsPage.cs" />
     <Compile Include="Features\Api\AuthorizedApiController.cs" />
     <Compile Include="Features\Api\ExternalLoginConfirmationViewModel.cs" />
     <Compile Include="Features\Api\PublicApiController.cs" />
+    <Compile Include="Features\Blocks\AboutUsBlock\AboutUsBlock.cs" />
     <Compile Include="Features\Blocks\AssetsDownloadLinksBlock\AssetsDownloadLinksBlock.cs" />
     <Compile Include="Features\Blocks\AssetsDownloadLinksBlock\AssetsDownloadLinksBlockController.cs" />
     <Compile Include="Features\Blocks\AssetsDownloadLinksBlock\AssetsDownloadLinksBlockViewModel.cs" />
@@ -1968,6 +1971,10 @@
     <Content Include="Assets\scss\vendors\font-awesome-5.9.0\webfonts\fa-solid-900.woff" />
     <Content Include="Assets\scss\vendors\font-awesome-5.9.0\webfonts\fa-solid-900.woff2" />
     <Content Include="Assets\scss\vendors\mvc-grid\Fonts\GridGlyphs.woff" />
+    <Content Include="Features\AboutUs\Index.cshtml" />
+    <Content Include="Features\AboutUs\_aboutus.scss" />
+    <Content Include="Features\Blocks\AboutUsBlock\_aboutus-block.scss" />
+    <Content Include="Features\Blocks\AboutUsBlock\AboutUsBlock.cshtml" />
     <None Include="Features\CatalogContent\DynamicCatalogContent\DynamicProduct\Index.cshtml" />
     <Content Include="Features\Events\CalendarBlock\calendar-block.js" />
     <Content Include="Features\Markets\market.js" />
