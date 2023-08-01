@@ -1,0 +1,27 @@
+﻿
+@using Foundation.Features.AboutUs_S
+
+@model  ContentViewModel<AboutUsPage_S>
+
+
+<div class="row">
+    <div class="col-md-12 col-lg-2">
+        <div class="col-12">
+            @Html.PropertyFor(x => x.CurrentContent.SubContentArea)
+        </div>
+    </div>
+    <div class="col-md-12 col-lg-10">
+        <div class="home-page row no-gutters">
+
+            @if ((Model.CurrentContent.MainBody != null && !Model.CurrentContent.MainBody.IsEmpty) || PageEditing.PageIsInEditMode)
+            {
+                <div class="col-12">
+                    @Html.PropertyFor(m => m.CurrentContent.MainBody)
+                </div>
+            }
+            <div class="col-12">
+                @Html.PropertyFor(x => x.CurrentContent.MainContentArea)
+            </div>
+        </div>
+    </div>
+</div>
