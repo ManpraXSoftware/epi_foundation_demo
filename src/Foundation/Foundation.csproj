@@ -1087,7 +1087,7 @@
     <Compile Include="Features\Api\AuthorizedApiController.cs" />
     <Compile Include="Features\Api\ExternalLoginConfirmationViewModel.cs" />
     <Compile Include="Features\Api\PublicApiController.cs" />
-    <Compile Include="Features\Blocks\AboutUsBlock\AboutUsBlock.cs" />
+    <Compile Include="Features\Blocks\AboutUsNewwBlock\AboutUsNewwBlock.cs" />
     <Compile Include="Features\Blocks\AssetsDownloadLinksBlock\AssetsDownloadLinksBlock.cs" />
     <Compile Include="Features\Blocks\AssetsDownloadLinksBlock\AssetsDownloadLinksBlockController.cs" />
     <Compile Include="Features\Blocks\AssetsDownloadLinksBlock\AssetsDownloadLinksBlockViewModel.cs" />
@@ -1973,8 +1973,8 @@
     <Content Include="Assets\scss\vendors\mvc-grid\Fonts\GridGlyphs.woff" />
     <Content Include="Features\AboutUs\Index.cshtml" />
     <Content Include="Features\AboutUs\_aboutus.scss" />
-    <Content Include="Features\Blocks\AboutUsBlock\_aboutus-block.scss" />
-    <Content Include="Features\Blocks\AboutUsBlock\AboutUsBlock.cshtml" />
+    <Content Include="Features\Blocks\AboutUsNewwBlock\_aboutus-block.scss" />
+    <Content Include="Features\Blocks\AboutUsNewwBlock\AboutUsNewwBlock.cshtml" />
     <None Include="Features\CatalogContent\DynamicCatalogContent\DynamicProduct\Index.cshtml" />
     <Content Include="Features\Events\CalendarBlock\calendar-block.js" />
     <Content Include="Features\Markets\market.js" />

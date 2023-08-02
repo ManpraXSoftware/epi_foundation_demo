@@ -1,0 +1,19 @@
+@using Foundation.Features.Blocks.AboutUsNewwBlock
+@using EPiServer.SpecializedProperties;
+
+@model IBlockViewModel<AboutUsNewwBlock>
+
+<link rel="stylesheet" href="~/Features/Blocks/AboutUsNewwBlock/_aboutus-block.scss" />
+
+<div style="background-color: @Model.CurrentBlock.BackgroundColor; opacity:@Model.CurrentBlock.BlockOpacity;" class="@(Model.CurrentBlock.Padding + " " + Model.CurrentBlock.Margin)">
+    <ul>
+        <li><a class="active" href="@Url.ContentUrl(Model.CurrentBlock.HeadingLink)" @Html.EditAttributes(x => x.CurrentBlock.Heading)> @Model.CurrentBlock.Heading</a></li>
+        @foreach (var item in Model.CurrentBlock.Links ?? new LinkItemCollection())
+        {
+            <li>
+                <a href="@Url.PageUrl(item.Href)">@item.Text</a>
+            </li>
+        }
+        <li @Html.EditAttributes(x => x.CurrentBlock.Description)>@Model.CurrentBlock.Description</li>
+    </ul>
+</div>
